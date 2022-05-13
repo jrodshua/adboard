@@ -1,0 +1,47 @@
+@keyframes pulse {
+  50% {
+    background: #803d5f;
+  }
+}
+
+.loadWrapper {
+  background-color: #2d2e4e;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading {
+  position: relative;
+  width: 6px;
+  height: 24px;
+  background: #ff79bd;
+  animation: pulse 750ms infinite;
+  animation-delay: 250ms;
+}
+
+.loading:before, .loading:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 16px;
+  width: 6px;
+  background: #ff79bd;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: pulse 750ms infinite;
+}
+
+.loading:before {
+  left: -12px;
+}
+
+.loading:after {
+  left: 12px;
+  animation-delay: 500ms;
+}

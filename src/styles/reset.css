@@ -12,10 +12,16 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  width: 100%;
+  height: 100%;
 }
 
 body {
+  width: 100%;
+  height: 100%;
   margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 body {

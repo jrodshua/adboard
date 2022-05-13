@@ -1,0 +1,41 @@
+.main {
+  height: 100%;
+}
+
+.container {
+  border: 1px solid blue;
+  height: 100%;
+  padding: 16px;
+  margin-top: 96px;
+}
+
+.mainFlex {
+  height: 100%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.topRow {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+
+.topColFlex {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  height: 220px;
+  border: 1px solid yellow;
+  margin-bottom: 32px;
+}
+
+.graph {
+  height: 300px;
+  border: 1px solid green;
+}
