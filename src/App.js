@@ -1,6 +1,8 @@
+import style from './styles/styles.module.css';
+
 function App() {
   return (
-    <div className="App">
+    <div className={style.appWrapper}>
       <h1>adboard</h1>
     </div>
   );
