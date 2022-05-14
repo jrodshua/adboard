@@ -24,18 +24,11 @@
 }
 
 .topColFlex {
-  border: 1px solid blue;
   display: flex;
   flex-direction: column;
+  max-height: 100%;
 }
 
 .card {
-  height: 220px;
-  border: 1px solid yellow;
-  margin-bottom: 32px;
-}
-
-.graph {
-  height: 300px;
-  border: 1px solid green;
+  margin-bottom: 16px;
 }

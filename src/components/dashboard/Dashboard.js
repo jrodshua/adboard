@@ -1,3 +1,5 @@
+import GlanceCard from './cards/GlanceCard';
+import GraphCard from './cards/GraphCard';
 import dash from '../../styles/dash.module.css';
 
 export default function Dashboard() {
@@ -7,8 +9,12 @@ export default function Dashboard() {
         <div className={dash.mainFlex}>
           <div className={dash.topRow}>
             <div className={dash.topColFlex}>
-              <div className={dash.card}>Type Marketplace Avg Rev Avg Spend</div>
-              <div className={dash.graph}>Line Graph goes here</div>
+              <div className={dash.card}>
+                <GlanceCard />
+              </div>
+              <div className={dash.graph}>
+                <GraphCard />
+              </div>
             </div>
             <div>
               <div>Top Campaigns component</div>
