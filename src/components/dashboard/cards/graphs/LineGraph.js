@@ -1,12 +1,14 @@
 import Plot from 'react-plotly.js';
 
-export default function LineGraph({ data, width, height, title }) {
+export default function LineGraph({ data, title }) {
   return (
-    <div>
+    <>
       <Plot
         data={data}
-        layout={{ width, height, title }}
+        layout={{ title }}
+        useResizeHandler={true}
+        style={{ width: "100%", height: "100%", maxHeight: 360 }}
       />
-    </div>
+    </>
   )
 }

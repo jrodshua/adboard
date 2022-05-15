@@ -51,8 +51,6 @@ export default function GraphCard() {
         <div className={card.graphBody}>
           <LineGraph 
             data={graphType === "rev" ? revData : spendData}
-            width={600}
-            height={300}
             title="Weekly Ad Revenue"
           />
         </div>

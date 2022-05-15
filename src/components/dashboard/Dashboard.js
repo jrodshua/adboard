@@ -1,11 +1,14 @@
+import Dropdown from './Dropdown';
 import GlanceCard from './cards/GlanceCard';
 import GraphCard from './cards/GraphCard';
+import TopCampCard from './cards/TopCampCard';
 import dash from '../../styles/dash.module.css';
 
 export default function Dashboard() {
   return (
     <main className={dash.main}>
       <div className={dash.container}>
+        <Dropdown />
         <div className={dash.mainFlex}>
           <div className={dash.topRow}>
             <div className={dash.topColFlex}>
@@ -16,8 +19,8 @@ export default function Dashboard() {
                 <GraphCard />
               </div>
             </div>
-            <div>
-              <div>Top Campaigns component</div>
+            <div className={dash.topColRight}>
+              <TopCampCard />
             </div>
           </div>
           <div>

@@ -7,6 +7,7 @@
   padding: 16px;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .glance {
@@ -71,3 +72,52 @@
   border: 1px solid transparent;
   padding: 8px 0;
 }
+
+.graphBody {
+  max-width: 100%;
+  padding: 16px;
+  margin: 0 auto;
+}
+
+.camp {
+  height: 100%;
+}
+
+.flexCamp {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.topCamp {
+  min-height: 80px;
+}
+
+.topCamp div {
+  height: 100%;
+  padding-top: 16px;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.botCamp {
+  height: 100%;
+  padding: 0 16px;
+}
+
+.botCamp div {
+  border-bottom: 1px solid #000;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.botCamp span {
+  margin-right: 16px;
+  font-weight: normal;
+}
+
