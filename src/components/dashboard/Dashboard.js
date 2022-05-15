@@ -2,6 +2,7 @@ import Dropdown from './Dropdown';
 import GlanceCard from './cards/GlanceCard';
 import GraphCard from './cards/GraphCard';
 import TopCampCard from './cards/TopCampCard';
+import Table from './table/Table';
 import dash from '../../styles/dash.module.css';
 
 export default function Dashboard() {
@@ -24,7 +25,7 @@ export default function Dashboard() {
             </div>
           </div>
           <div>
-            <div>campaign data table</div>
+            <Table />
           </div>
         </div>
       </div>
