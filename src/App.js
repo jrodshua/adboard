@@ -1,5 +1,5 @@
 import Menu from './components/menu/Menu';
-import Dashboard from './components/dashboard/Dashboard';
+import DashboardParent from './components/dashboard/DashboardParent';
 import style from './styles/styles.module.css';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
           <Menu />
         </div>
         <div className={style.dashboard}>
-          <Dashboard />
+          <DashboardParent />
         </div>
       </div>
     </div>
