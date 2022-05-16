@@ -1,0 +1,22 @@
+[
+  {
+    "campaign_id": 1,
+    "name": "Dot's Pretzel's",
+    "average_ad_spend": 98.12,
+    "average_ad_revenue": 1019.83,
+    "ad_type": "Sponsored Products",
+    "campaign_start_date": "2022-04-01",
+    "campaign_end_date": "2022-04-08",
+    "marketplace": "Amazon.com"
+  },
+  {
+    "campaign_id": 2,
+    "name": "Willey Wallaby",
+    "average_ad_spend": 215.4,
+    "average_ad_revenue": 6261.37,
+    "ad_type": "Sponsored Products",
+    "campaign_start_date": "2022-04-01",
+    "campaign_end_date": null,
+    "marketplace": "Amazon.com"
+  }
+]

@@ -1,21 +1,38 @@
 import { useState } from 'react';
 import dash from '../../styles/dash.module.css';
 
-export default function Dropdown() {
-  const [menuOpen, setMenuOpen] = useState(false);
+export default function Dropdown({ data, page, setPage }) {
+  const [menu, setMenu] = useState(false);
+
+  const handleDropDown = (id) => {
+    setMenu(!menu);
+    if (id === page) return;
+    setPage(id);
+  }
+  
+  const currMenuItem = (
+      <button className={dash.companyBtn} onClick={() => handleDropDown(page)}>
+        <div>{data[page - 1].name} ▼</div>
+      </button>
+  )
+
+  const restOfMenu = (
+    <div className={dash.companies}>
+      {data.map(d => {
+        return d.campaign_id !== page ?
+        <button key={d.campaign_id} onClick={() => handleDropDown(d.campaign_id)}>
+          {d.name}
+        </button>
+      :
+        ""
+      })}
+    </div>
+  )
 
   return (
     <div className={dash.companyCamp}>
-      <button className={dash.companyBtn} onClick={() => setMenuOpen(!menuOpen)}>
-        <div>Daisy Pretzel's ▼</div>
-      </button>
-      {menuOpen && (
-        <div className={dash.companies}>
-          <button>Previous Weeks 1</button>
-          <button>Previous Weeks 2</button>
-          <button>Previous Weeks 3</button>
-        </div>
-      )}
+      {currMenuItem}
+      {menu ? restOfMenu : ""}
     </div>
   )
 }

@@ -1,6 +1,16 @@
 import card from '../../../styles/card.module.css';
 
-export default function GlanceCard() {
+export default function GlanceCard({ data, page }) {
+  const campaign = data[page - 1];
+  const dataGlance = (
+    <>
+      <div>{campaign.ad_type}</div>
+      <div>{campaign.marketplace}</div>
+      <div>{campaign.average_ad_revenue}</div>
+      <div>{campaign.average_ad_spend}</div>
+    </>
+  )
+
   return (
     <div className={card.container}>
       <div className={card.flex}>
@@ -11,10 +21,7 @@ export default function GlanceCard() {
           <div>Avg Spend</div>
         </div>
         <div className={card.glance}>
-          <div>Sponsored</div>
-          <div>Amazon</div>
-          <div>$800</div>
-          <div>$600</div>
+          {dataGlance}
         </div>
       </div>
     </div>
