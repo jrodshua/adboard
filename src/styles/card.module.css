@@ -1,6 +1,7 @@
 .container {
   border: 1px solid rgba(0,0,0,0.4);
   border-radius: 6px;
+  background-color: #ffffff;
 }
 
 .flex {
@@ -35,6 +36,7 @@
 }
 
 .graphTabs {
+  padding: 2px;
   width: 50%;
   max-width: 360px;
   display: flex;
@@ -43,6 +45,13 @@
 
 .graphTabs button {
   border: 1px solid transparent;
+  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 300ms, font-size .1s ease-out;
+}
+
+.graphTabs button:hover {
+  font-size: 17px;
+  text-decoration-color: #ff79bd;
 }
 
 .graphDate {
@@ -97,7 +106,7 @@
   height: 100%;
   padding-top: 16px;
   text-align: center;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid rgba(0,0,0,0.4);
   font-size: 18px;
   font-weight: bold;
 }
@@ -108,7 +117,7 @@
 }
 
 .botCamp div {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid rgba(0,0,0,0.4);
   height: 20%;
   display: flex;
   align-items: center;

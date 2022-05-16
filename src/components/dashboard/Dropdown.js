@@ -20,7 +20,7 @@ export default function Dropdown({ data, page, setPage }) {
     <div className={dash.companies}>
       {data.map(d => {
         return d.campaign_id !== page ?
-        <button key={d.campaign_id} onClick={() => handleDropDown(d.campaign_id)}>
+        <button key={d.campaign_id} className={dash.companyBtns} onClick={() => handleDropDown(d.campaign_id)}>
           {d.name}
         </button>
       :

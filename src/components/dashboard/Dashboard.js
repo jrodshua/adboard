@@ -24,11 +24,11 @@ export default function Dashboard({ data }) {
               </div>
             </div>
             <div className={dash.topColRight}>
-              <TopCampCard />
+              <TopCampCard data={data} />
             </div>
           </div>
           <div>
-            <Table />
+            <Table data={data} page={page} />
           </div>
         </div>
       </div>

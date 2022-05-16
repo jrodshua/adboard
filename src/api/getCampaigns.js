@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-// import GetRevenue from './getRevenue';
-// import GetSpend from './getSpend';
 
-const END_POINT = "camp.json";
+const END_POINT = "https://aexdujsae7.execute-api.us-west-1.amazonaws.com/prod/campaigns";
+const EP_REV = "https://aexdujsae7.execute-api.us-west-1.amazonaws.com/prod/ad-revenue-trend/";
+const EP_SPND = "https://aexdujsae7.execute-api.us-west-1.amazonaws.com/prod/ad-spend-trend/"
 
 export default function GetCampaigns() {
   const [campaignData, setCampaignData] = useState(null);
@@ -32,40 +32,16 @@ export default function GetCampaigns() {
   }, [])
 
   const fetchRev = async (id) => {
-    const response = await fetch(`rev${id}.json`);
+    const response = await fetch(`${EP_REV}${id}`);
     const res = await response.json();
     return res.trend;
   }
 
   const fetchSpend = async (id) => {
-    const response = await fetch(`spend${id}.json`);
+    const response = await fetch(`${EP_SPND}${id}`);
     const res = await response.json();
     return res.trend;
   }
 
   return { campaignData, loading }
 }
-
-// export default function GetCampaigns() {
-//   const [campaignData, setCampaignData] = useState(null);
-//   const [error, setError] = useState(null);
-//   const [loading, setLoading] = useState(true);
-
-//   useEffect(() => {
-//     const fetchData = async () => {
-//       try {
-//         const response = await fetch(END_POINT);
-//         const res = await response.json();
-//         setCampaignData(res);
-//         setLoading(false);
-//       } catch (error) {
-//         console.log("error", error);
-//       }
-//     }
-
-//     fetchData();
-//   }, [])
-
-//   return { campaignData, error, loading }
-// }
-

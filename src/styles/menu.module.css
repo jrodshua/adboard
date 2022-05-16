@@ -1,20 +1,48 @@
 .nav {
   height: 100%;
-  padding: 24px 8px;
+  padding: 24px 0;
 }
 
 .flex {
   height: 100%;
-  border: 1px solid blue;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
 .item {
-  border: 1px solid purple;
   padding: 16px;
   margin-bottom: 24px;
+  font-size: 18px;
+}
+
+.logo {
+  font-weight: 900;
+  color: #2d2e4e;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: #FF79BD;
+}
+
+.item a {
+  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 300ms, font-size .1s ease-out;
+}
+
+.item a:hover {
+  text-decoration-color: #ff79bd;
+}
+
+.active {
+  border: 1px solid rgba(0,0,0,0.4);
+  background-color: #F8F9FF;
+  color: #2d2e4e;
+  font-weight: 500;
+  border-left: 1px solid transparent;
+  width: 85%;
+  border-radius: 0 8px 8px 0;
 }
 
 @media (max-width: 700px) {

@@ -1,6 +1,16 @@
 import tab from '../../../styles/tab.module.css';
 
-export default function Table() {
+export default function Table({ data, page }) {
+  const campaign = data[page - 1];
+
+  const metrics = campaign.revenue_list.map((camp, i) => (
+    <tr key={campaign.name + camp.date}>
+      <td>{camp.date}</td>
+      <td>{camp.value}</td>
+      <td>{campaign.spend_list[i].value}</td>
+    </tr>
+  ))
+
   return (
     <div className={tab.container}>
       <div className={tab.spacing}>
@@ -14,16 +24,7 @@ export default function Table() {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>4/1/22</td>
-              <td>$103.99</td>
-              <td>$53.43</td>
-            </tr>
-            <tr>
-              <td>4/3/22</td>
-              <td>$83.29</td>
-              <td>$43.44</td>
-            </tr>
+            {metrics}
           </tbody>
         </table>
       </div>

@@ -1,5 +1,0 @@
-export const data0 = [{"campaign_id":1,"name":"Dot's Pretzel's","average_ad_spend":98.12,"Average_ad_revenue":1019.83,"ad_type":"Sponsored Products","Campaign_start_date":"2022-04-01","Campaign_end_date":"2022-04-08","marketplace":"Amazon.com"},{"Campaign_id":2,"name":"Willey Wallaby","average_ad_spend":215.4,"Average_ad_revenue":6261.37,"ad_type":"Sponsored Products","Campaign_start_date":"2022-04-01","Campaign_end_date":null,"marketplace":"Amazon.com"}];
-
-export const data1 = {"trend":[{"date":"2022-04-01","value":1023.25},{"date":"2022-04-02","value":1036.01},{"date":"2022-04-03","value":999.1},{"date":"2022-04-04","value":1010.22},{"date":"2022-04-05","value":1003.86},{"date":"2022-04-06","value":1044.64},{"date":"2022-04-07","value":1059.94},{"date":"2022-04-08","value":1113.02}]};
-
-export const data2 = {"trend":[{"date":"2022-04-01","value":101.22},{"date":"2022-04-02","value":111.83},{"date":"2022-04-03","value":103.23},{"date":"2022-04-04","value":105.34},{"date":"2022-04-05","value":104.89},{"date":"2022-04-06","value":89.46},{"date":"2022-04-07","value":93.47},{"date":"2022-04-08","value":99.36}]};
